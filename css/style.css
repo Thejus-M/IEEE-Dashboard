@@ -1,0 +1,314 @@
+body {
+    background-color: #006494;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+.Wholepage {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-auto-rows: 100%;
+}
+
+.sidebar {
+    background-color: #051923;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #006494;
+    font-size: 50px;
+}
+
+.sidebar span {
+    font-size: 50px;
+    color: #006494;
+}
+
+.icons {
+    padding-top: 6em;
+    padding-left: 0.5em;
+}
+
+/* .restpage div{
+    background-color: #051923;
+    border-radius: 30px;
+} */
+
+.usr {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.noti {
+    margin: 35px;
+    align-items: center;
+
+}
+
+.noti,
+.username {
+    padding: 10px;
+    align-items: center;
+
+}
+
+.menu {
+    padding: 10px;
+}
+
+.name {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.username {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.1fr;
+    padding: 20px;
+}
+
+.rnd_div {
+    padding: 10px;
+    margin: 10px;
+    /* background-color: #051923; */
+    background: linear-gradient(390deg, #04212F 0%, #01476C 100%);
+    border-radius: 30px;
+}
+.rnd_div_dark{
+    
+    padding: 10px;
+    margin: 10px;
+    /* background-color: #051923; */
+    background: linear-gradient(390deg, #01131b 0%, #01476C 100%);
+    border-radius: 30px;
+}
+
+.blu {
+    background: #006494;
+}
+
+.gry {
+    color: gray;
+}
+
+.statusbar {
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+/* col one */
+.one_col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.one_col_one {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.one_col_two {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.one_col_three {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.one_col_four {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* col two */
+
+.two_col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.two_col_two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.three_col {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+.three_col_two{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.semi_prg{
+    max-width: 15em;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+
+
+
+@media only screen and (max-width:1374px) {
+    .one_col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .two_col {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .three_col {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-width:798px) {
+    .one_col {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * circle progress */
+.circle-wrap {
+    margin: 150px auto;
+    width: 150px;
+    height: 150px;
+    background: #023650;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    background: #023650;
+    /* line-height: 120px; */
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 14px;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #33ed22;
+}
+
+.mask.full,
+.circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(135deg);
+}
+
+@keyframes fill {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+
+
+/* *  semi circle progress */
+
+.progress{
+    position: relative;
+    margin: 30px;
+    margin-left: 30%;
+    float:left;
+    text-align: center;
+}
+  .barOverflow{ /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden; /* Comment this line to understand the trick*/
+    width: 250px; height: 130px; /* Half circle (overflow) */
+    margin-bottom: -70px; /* bring the numbers up */
+}
+.bar{
+    position: absolute;
+    top: 0; left: 0;
+    width: 250px; height: 250px; /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 10px ridge rgb(32, 208, 221);     /* half gray, */
+    border-bottom-color: rgb(255, 255, 255);  /* half azure */
+    border-right-color: rgb(6, 16, 49);
+}
+
+
+
+
+/* ! Bar Graph */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #heading-example-2 {
+    --color:rgb(196, 186, 186);
+    height: 200px;
+    max-width: 300px;
+    /* margin: 0 auto; */
+  }
