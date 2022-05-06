@@ -78,8 +78,9 @@ body {
     background: linear-gradient(390deg, #04212F 0%, #01476C 100%);
     border-radius: 30px;
 }
-.rnd_div_dark{
-    
+
+.rnd_div_dark {
+
     padding: 10px;
     margin: 10px;
     /* background-color: #051923; */
@@ -144,13 +145,7 @@ body {
     grid-template-columns: 1fr 2fr;
 }
 
-
-.three_col_two{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.semi_prg{
+.semi_prg {
     max-width: 15em;
     margin: 0;
     display: grid;
@@ -270,27 +265,39 @@ body {
 
 /* *  semi circle progress */
 
-.progress{
+.progress {
     position: relative;
     margin: 30px;
     margin-left: 30%;
-    float:left;
+    float: left;
     text-align: center;
 }
-  .barOverflow{ /* Wraps the rotating .bar */
+
+.barOverflow {
+    /* Wraps the rotating .bar */
     position: relative;
-    overflow: hidden; /* Comment this line to understand the trick*/
-    width: 250px; height: 130px; /* Half circle (overflow) */
-    margin-bottom: -70px; /* bring the numbers up */
+    overflow: hidden;
+    /* Comment this line to understand the trick*/
+    width: 250px;
+    height: 130px;
+    /* Half circle (overflow) */
+    margin-bottom: -70px;
+    /* bring the numbers up */
 }
-.bar{
+
+.bar {
     position: absolute;
-    top: 0; left: 0;
-    width: 250px; height: 250px; /* full circle! */
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    /* full circle! */
     border-radius: 50%;
     box-sizing: border-box;
-    border: 10px ridge rgb(32, 208, 221);     /* half gray, */
-    border-bottom-color: rgb(255, 255, 255);  /* half azure */
+    border: 10px ridge rgb(32, 208, 221);
+    /* half gray, */
+    border-bottom-color: rgb(255, 255, 255);
+    /* half azure */
     border-right-color: rgb(6, 16, 49);
 }
 
@@ -298,17 +305,10 @@ body {
 
 
 /* ! Bar Graph */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  #heading-example-2 {
-    --color:rgb(196, 186, 186);
+
+#heading-example-2 {
+    --color: rgb(202, 186, 186);
     height: 200px;
     max-width: 300px;
-    /* margin: 0 auto; */
-  }
+    margin: 0 auto;
+}
