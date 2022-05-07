@@ -9,6 +9,7 @@ body {
 .Wholepage {
     display: grid;
     grid-template-columns: 100px auto;
+    /* grid-template-columns: 300px auto; */
     grid-auto-rows: 100%;
 }
 
@@ -317,4 +318,42 @@ body {
     height: 200px;
     max-width: 400px;
     margin: 0 auto;
+}
+
+.graph_img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sidebar_open{
+    background-color: #051923;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #006494;
+    font-size: 3em;
+}
+.ic{
+    align-items: center;text-align: center;
+}
+.text{
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+}
+.f{
+    align-items: center;
+    text-align: center;
+
 }
