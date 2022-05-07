@@ -8,8 +8,8 @@ body {
 
 .Wholepage {
     display: grid;
-    grid-template-columns: 100px auto;
-    /* grid-template-columns: 300px auto; */
+    /* grid-template-columns: 100px auto; */
+    grid-template-columns: 300px auto;
     grid-auto-rows: 100%;
 }
 
@@ -352,7 +352,7 @@ body {
     align-items: center;text-align: center;
 }
 .text{
-    visibility: hidden;
+    /* visibility: hidden; */
     padding: 0;
     margin: 0;
 }
@@ -360,4 +360,16 @@ body {
     align-items: center;
     text-align: center;
 
+}
+.t{
+    padding: 30px;
+    margin: 0;
+}
+.ti{
+    text-align: right;
+    align-self: initial;
+}
+.tr{
+    text-align: left;
+    align-items: initial;
 }
