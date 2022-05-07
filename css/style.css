@@ -28,6 +28,10 @@ body {
     color: #006494;
 }
 
+#cross{
+    visibility: hidden;
+}
+
 .icons {
     padding-top: 6em;
     padding-left: 0.5em;
